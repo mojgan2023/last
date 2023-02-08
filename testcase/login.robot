@@ -1,10 +1,10 @@
 ***Settings***
 Documentation  testcase login to djkala
-Library  seleniumlibrary
+Library  SeleniumLibrary
 Resource  ../Resource/login.robot
-#Suite Setup  Open Page
+Suite Setup  Open Page
+Suite Teardown  Close Browser
 
 ***Test Cases***
 test login 
-    Open Page
     login

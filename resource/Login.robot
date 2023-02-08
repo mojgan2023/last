@@ -12,6 +12,7 @@ ${vorud}  xpath:/html/body/div[1]/main/div[2]/div[2]/button[1]/div[2]
 ${passid}  xpath:/html/body/div[1]/main/div[2]/div[2]/form/label/div/div[1]/input
 ${accept}  xpath:/html/body/div[1]/main/div[2]/div[2]/button[3]/div[2]
 ${myuser}  xpath:/html/body/div[1]/div[1]/div[1]/header/div[2]/div/div/div[2]/div[1]/div[1]
+${profileName}  xpath://span[contains(@class, "text-subtitle-strong")]
 
 
 ***Keywords***
@@ -31,4 +32,4 @@ login
    Click Element  ${accept}
    wait until Element is Visible  ${myuser}
    Click Element  ${myuser}
-
+   Element Text Should Be  ${profileName}  مژگان هاشمی
